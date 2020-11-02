@@ -89,6 +89,12 @@ pm2 deploy deploy.prod.config.js production
 
 建议: 创建一个分支用于发布.
 
+查看pm2的log:
+```
+tail -f ~/.pm2/pm2.log
+```
+注意: 配置的log路径文件中没有内容, 原因不明, 待解决.
+
 ## 说明
 
 Next.js工程中引入antd:
