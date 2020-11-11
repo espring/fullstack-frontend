@@ -12,7 +12,6 @@ const themeVariables = lessToJS(
 module.exports = withLess({
   env: {
     APIV1: process.env.APIV1,
-    API_TOKEN: process.env.API_TOKEN,
     PORT: process.env.PORT,
   },
 
