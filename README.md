@@ -34,6 +34,18 @@ PORT=9002
 
 APIV1 是后端接口, API_TOKEN是以token方式访问, 参考[后端工程模板](https://github.com/espring/fullstack-backtend)
 
+配置next.config.js 中的环境变量.
+```
+module.exports = withLess({
+  env: {
+    APIV1: process.env.APIV1,
+    PORT: process.env.PORT,
+  },
+
+```
+
+注意: next.config.js 中的环境变量是通过webpack打包给前端页面代码的, 所以安全性变量不能在这里暴露出去!
+
 
 ## 部署
 
